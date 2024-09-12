@@ -1,0 +1,23 @@
+Script started on 2022-10-26 13:50:43+08:00 [TERM="xterm" TTY="/dev/pty1" COLUMNS="80" LINES="24"]
+[?2004h]0;~/project1
+[32muser@LAPTOP-REEAC2HM [33m~/project1[0m
+$ make clean
+[?2004lrm *.hex *.ihx *.lnk *.lst *.map *.mem *.rel *.rst *.sym
+rm: cannot remove '*.ihx': No such file or directory
+rm: cannot remove '*.lnk': No such file or directory
+make: *** [Makefile:25: clean] Error 1
+[?2004h]0;~/project1
+[32muser@LAPTOP-REEAC2HM [33m~/project1[0m
+$ make
+[?2004lsdcc -c  testcoop.c
+[6n[6n[m[?25htestcoop.c:56: warning 158: overflow in implicit constant conversion
+sdcc -c  cooperative.c
+[6n[m[?25hcooperative.c:199: warning 85: in function ThreadCreate unreferenced function ar
+gument : 'fp'
+sdcc  -o testcoop.hex testcoop.rel cooperative.rel
+[6n[m[?25h[?2004h]0;~/project1
+[32muser@LAPTOP-REEAC2HM [33m~/project1[0m
+$ exit
+[?2004lexit
+
+Script done on 2022-10-26 13:52:06+08:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,30 @@
+Script started on 2022-12-14 17:38:23+08:00 [TERM="xterm" TTY="/dev/pty0" COLUMNS="80" LINES="24"]
+[?2004h]0;~/project4
+[32muser@LAPTOP-REEAC2HM [33m~/project4[0m
+$ make clean
+[?2004lrm *.hex *.ihx *.lnk *.lst *.map *.mem *.rel *.rst *.sym
+rm: cannot remove '*.hex': No such file or directory
+rm: cannot remove '*.ihx': No such file or directory
+rm: cannot remove '*.lnk': No such file or directory
+rm: cannot remove '*.lst': No such file or directory
+rm: cannot remove '*.map': No such file or directory
+rm: cannot remove '*.mem': No such file or directory
+rm: cannot remove '*.rel': No such file or directory
+rm: cannot remove '*.rst': No such file or directory
+rm: cannot remove '*.sym': No such file or directory
+make: *** [Makefile:25: clean] Error 1
+[?2004h]0;~/project4
+[32muser@LAPTOP-REEAC2HM [33m~/project4[0m
+$ make
+[?2004lsdcc -c  test3threads.c
+[6n[6n[m[?25htest3threads.c:136: warning 158: overflow in implicit constant conversion
+sdcc -c  preemptive.c
+[6n[m[?25hpreemptive.c:205: warning 85: in function ThreadCreate unreferenced function arg
+ument : 'fp'
+sdcc  -o test3threads.hex test3threads.rel preemptive.rel
+[6n[m[?25h[?2004h]0;~/project4
+[32muser@LAPTOP-REEAC2HM [33m~/project4[0m
+$ exit
+[?2004lexit
+
+Script done on 2022-12-14 17:38:39+08:00 [COMMAND_EXIT_CODE="0"]

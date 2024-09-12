@@ -1,0 +1,23 @@
+Script started on 2022-11-30 17:13:54+08:00 [TERM="xterm" TTY="/dev/pty0" COLUMNS="80" LINES="24"]
+[?2004h]0;~/project3
+[32muser@LAPTOP-REEAC2HM [33m~/project3[0m
+$ make clean
+[?2004lrm *.hex *.ihx *.lnk *.lst *.map *.mem *.rel *.rst *.sym
+rm: cannot remove '*.ihx': No such file or directory
+rm: cannot remove '*.lnk': No such file or directory
+make: *** [Makefile:25: clean] Error 1
+[?2004h]0;~/project3
+[32muser@LAPTOP-REEAC2HM [33m~/project3[0m
+$ make
+[?2004lsdcc -c  testpreempt.c
+[6n[6n[m[?25htestpreempt.c:82: warning 158: overflow in implicit constant conversion
+sdcc -c  preemptive.c
+[6n[m[?25hpreemptive.c:210: warning 85: in function ThreadCreate unreferenced function arg
+ument : 'fp'
+sdcc  -o testpreempt.hex testpreempt.rel preemptive.rel
+[6n[m[?25h[?2004h]0;~/project3
+[32muser@LAPTOP-REEAC2HM [33m~/project3[0m
+$ exit
+[?2004lexit
+
+Script done on 2022-11-30 17:16:15+08:00 [COMMAND_EXIT_CODE="0"]
